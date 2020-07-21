@@ -20,4 +20,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 #ENTRYPOINT ["dotnet", "SchoolApi.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnetSchoolApi.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet SchoolApi.dll
